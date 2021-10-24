@@ -4,8 +4,12 @@ html {
     font-family: "Montserrat";
     font-weight: normal;
 }
+
 body {
+    padding-bottom: 5rem;
     background: linear-gradient(135deg, black, 75%, rgb(100, 3, 119));
+    background-attachment: fixed;
+    overflow-y: scroll;
 }
 
 .title, .textbox, .buttons {
@@ -28,7 +32,7 @@ body {
     font-size: 3rem;
 }
 
-.textbox input {
+input {
     height: 100%;
     padding: 7px;    
     background-color: rgb(51, 50, 50);
@@ -67,4 +71,59 @@ body {
 
 .buttons button:active {
     color: gray;
+}
+
+/* scrollbar design */
+body::-webkit-scrollbar {
+    display: none;
+}
+ 
+/* body::-webkit-scrollbar-track {
+    background: black;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  border-radius: 20px;
+  border-style: none;
+} */
+
+/* sign-up page */
+form fieldset {
+    max-width: 20rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    justify-content: center;
+    margin: auto;
+    border-style: none;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.boxtext {
+    color: black;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+h3.boxtext {
+    margin: 0rem;
+}
+
+.survey input:focus, input:hover {
+    background-color: rgb(51, 50, 50);
+}
+
+.survey button {
+    width: 70%;
+    margin: auto;
+    margin-top: 1rem;
+    border-radius: 10px;
+    border-style: none;
+    
+}
+.survey .buttons {
+    padding: 0px;
 }

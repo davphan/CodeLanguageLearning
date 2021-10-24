@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do: Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script src="script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="title">
+        <h1 id="to-do">To-Do</h1>
+        <h2>Sign Up</h2>
+    </div>
+    <form class="survey">
+        <fieldset>
+            <h3 class="boxtext">Login Information</h3>
+            <label class="boxtext" for="username">Username</label>
+            <input type="text" placeholder="Username" name="username" id="username">
+            <label class="boxtext" for="password">Password</label>
+            <input type="password" placeholder="Password" name="password" id="password">
+            <label class="boxtext" for="re-enter">Re-enter Password</label>
+            <input type="password" placeholder="Re-enter password" name="re-enter" id="re-enter">
+            <div class="buttons">
+                <button type="button" onclick="sign_up()" id="loginEnter">Sign Up</button>
+                <button type="button" onclick="returnHome()">Back to Login</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
