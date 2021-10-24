@@ -1,0 +1,70 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+    font-weight: normal;
+}
+body {
+    background: linear-gradient(135deg, black, 75%, rgb(100, 3, 119));
+}
+
+.title, .textbox, .buttons {
+    width: 100%;
+    height: 100 vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.title {
+    font-family: "Montserrat";
+    color: white;
+    padding-top: 8rem;
+}
+
+#to-do {
+    font-size: 3rem;
+}
+
+.textbox input {
+    height: 100%;
+    padding: 7px;    
+    background-color: rgb(51, 50, 50);
+    color: white;
+    border-radius: 10px;
+    border-style: none;
+    outline-style: hidden;
+}
+.textbox input:focus, input:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.buttons {
+    padding: 2rem;
+}
+
+.buttons button {
+    padding: 0.5rem;
+    margin: 0.3rem;
+    font-family: "Montserrat";
+    color: white;
+    background-color: rgba(0, 0, 0, .3);
+    border-style: none;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 11rem;
+}
+
+#newUser {
+    margin: 2rem;
+}
+
+.buttons button:hover {
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.buttons button:active {
+    color: gray;
+}
