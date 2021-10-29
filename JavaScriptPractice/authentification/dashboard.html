@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do: Dashboard</title>
+    <link rel="stylesheet" href="dashboardStyle.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script src="script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="titlebar">
+        <h1 id="to-do">To-Do</h1>
+        <div class="dropdown">
+            <button class="drop-button"><-></button>
+            <div class="drop-menu">
+                <a href="">Settings</a>
+                <a href="">Sign Out</a>
+            </div>
+        </div>
+    </div>
+    <div class="full-page">
+        <div class="sidebar">
+            <div class="main">
+                <div class="side-drop">
+                    <button type="button" onclick="dropdown()" class="side-drop-btn">Tasks</button>
+                    <div class="side-drop-menu">
+                        <button>Unfinished</button>
+                        <button>Completed</button>
+                    </div>
+                </div>
+            </div>
+            <div class="daily">
+                <div class="side-drop">
+                    <button type="button" onclick="dropdown()" class="side-drop-btn">Sunday</button>
+                    <div class="side-drop-menu">
+                        
+                    </div>
+                </div>
+                <div class="side-drop">
+                    <button type="button" onclick="dropdown()" class="side-drop-btn">Monday</button>
+                    <div class="side-drop-menu">
+                        
+                    </div>
+                </div>
+                <div class="side-drop">
+                    <button type="button" onclick="dropdown()" class="side-drop-btn">Tuesday</button>
+                    <div class="side-drop-menu">
+                        
+                    </div>
+                </div>
+                <div class="side-drop">
+                    <button type="button" onclick="dropdown()" class="side-drop-btn">Wednesday</button>
+                    <div class="side-drop-menu">
+                        
+                    </div>
+                </div>
+                <div class="side-drop">
+                    <button type="button" onclick="dropdown()" class="side-drop-btn">Thursday</button>
+                    <div class="side-drop-menu">
+                        
+                    </div>
+                </div>
+                <div class="side-drop">
+                    <button type="button" onclick="dropdown()" class="side-drop-btn">Friday</button>
+                    <div class="side-drop-menu">
+                        
+                    </div>
+                </div>
+                <div class="side-drop">
+                    <button type="button" onclick="dropdown()" class="side-drop-btn">Saturday</button>
+                    <div class="side-drop-menu">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="task-window">
+            <p></p>
+        </div>
+    </div>
+</body>
+</html>

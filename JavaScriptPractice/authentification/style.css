@@ -30,6 +30,7 @@ body {
 
 #to-do {
     font-size: 3rem;
+    color: white;
 }
 
 input {
@@ -77,16 +78,6 @@ input {
 body::-webkit-scrollbar {
     display: none;
 }
- 
-/* body::-webkit-scrollbar-track {
-    background: black;
-}
- 
-body::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
-  border-radius: 20px;
-  border-style: none;
-} */
 
 /* sign-up page */
 form fieldset {

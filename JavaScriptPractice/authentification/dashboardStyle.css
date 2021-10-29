@@ -1,0 +1,125 @@
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+    font-weight: normal;
+    margin: 0px;
+    overflow: hidden;
+}
+
+/* title bar styling */
+#to-do {
+    color: white;
+    margin: 0px;
+    padding: 1rem;
+    background-color: rgb(20, 20, 20);
+}
+
+/* drop down menu */
+.drop-button {
+    background-color: transparent;
+    color: white;
+    border-style: none;
+}
+
+.dropdown {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    display: inline-block;
+}
+
+.drop-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    min-width: 3rem;
+    padding: 0;
+}
+
+.drop-menu a {
+    background-color: rgb(20, 20, 20);
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem;
+}
+
+.drop-menu a:hover {
+    background-color: rgb(100, 0, 100);
+}
+
+.dropdown:hover .drop-menu {
+    display: block;
+}
+
+.dropdown:hover .drop-button {
+
+}
+
+/* All non-title bar stuff */
+.full-page {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+/* sidebar styling */
+.sidebar {
+    height: 100%;
+    background-color: rgba(30, 30, 30, 1);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.sidebar::-webkit-scrollbar {
+    display: none;
+}
+
+.main, .daily {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 20%;
+}
+
+.daily {
+    top: 40%;
+}
+
+/* sidebar dropdown styling */
+.side-drop {
+    display: inline-block;
+}
+
+.side-drop-btn {
+    color: white;
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+    background-color: transparent;
+    /* border-style: none; */
+    width: 100%;
+}
+
+.side-drop-menu {
+    display: none;
+    position: absolute;
+}
+
+.side-drop-menu button {
+    display: block;
+}
+
+.side-drop:hover .side-drop-menu {
+    display: block;
+}
+
+/* main styling */
+.task-window {
+    flex: 4;
+    background: linear-gradient(135deg, black, 75%, rgb(100, 3, 119));
+    background-attachment: fixed;
+}
+
