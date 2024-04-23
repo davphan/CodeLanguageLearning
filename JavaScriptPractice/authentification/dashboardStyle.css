@@ -79,47 +79,134 @@ body {
 }
 
 .main, .daily {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
-    position: absolute;
-    width: 20%;
+    /* position: absolute; */
+    /* width: 20%; */
 }
 
 .daily {
-    top: 40%;
+    position: relative;
+    top: 20%;
+    border-style: solid;
+    border-color: transparent;
+    border-top-color: rgba(128, 128, 128, 0.349);
+    /* display: none; */
 }
 
 /* sidebar dropdown styling */
 .side-drop {
     display: inline-block;
+    padding: 0.5rem;
 }
 
 .side-drop-btn {
-    color: white;
+    color: rgb(200, 200, 200);
     font-family: "Montserrat";
-    font-size: 1.5rem;
+    font-size: x-large;
+    text-align: left;
     background-color: transparent;
-    /* border-style: none; */
+    border-style: none;
     width: 100%;
 }
 
 .side-drop-menu {
     display: none;
     position: absolute;
+    left: 2rem;
+    background-color: transparent;
+    padding: 0.5rem;
+}
+
+.side-drop-btn:hover {
+    color: white;
 }
 
 .side-drop-menu button {
+    background-color: transparent;
+    color: rgb(200, 200, 200);
+    display: flex;
+    flex-direction: column;
+    border-style: none;
+    font-family: 'Montserrat';
+    font-size: medium;
+    padding: 0.5rem;
+}
+
+.side-drop-menu button:hover {
+    color: white;
+}
+
+.show {
+    display: block;
+}
+
+
+/* .side-drop-menu button {
     display: block;
 }
 
 .side-drop:hover .side-drop-menu {
     display: block;
-}
+} */
 
 /* main styling */
 .task-window {
     flex: 4;
     background: linear-gradient(135deg, black, 75%, rgb(100, 3, 119));
     background-attachment: fixed;
+}
+
+#task-body {
+    position: absolute;
+    height: 76%;
+    width: 71%;
+    background-color: rgba(255, 255, 255, 0.85);
+    margin: 3rem;
+    border-radius: 2rem;
+}
+
+#task-body h1 {
+    position: absolute;
+    left: 1.5rem;
+}
+
+#add-group {
+    position: absolute;
+    right: 2rem;
+    top: 1.8rem;
+}
+
+#add-task {
+    border-style: none;
+    background-color: rgba(128, 128, 128, 0.349);
+    height: 2rem;
+    width: 2rem;
+}
+
+/* add task stuff */
+#add-task:hover {
+    background-color: rgb(200, 200, 200);
+}
+
+#add-task:active {
+    background-color: rgba(30, 30, 30, 1);
+}
+
+.form-popup {
+    /* display: none; */
+    position: absolute;
+    right: 2rem;
+    height: 28rem;
+    width: 40rem;
+    border-style: solid;
+}
+
+.form-container {
+    border-style: solid;
+    border-color: aqua;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 

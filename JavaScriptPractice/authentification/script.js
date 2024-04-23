@@ -55,3 +55,28 @@ $("input").on('keyup', function(event) {
         document.getElementById("loginEnter").click()
     }
 })
+
+// dashboard functions
+
+// sidebar dropdown menu
+let sidebarButtons = document.querySelectorAll(".side-drop-btn")
+let sidebarMenu = document.querySelectorAll(".side-drop-menu")
+
+sidebarButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        let menuType = button.innerText
+        let menu = document.querySelector(`#${menuType}`)
+        if (menu.style.display === "") {
+            menu.style.display = "block"
+        } else {
+            menu.style.display = ""
+        }
+    })
+})
+
+// add task
+let addTask = document.querySelector("#add-task")
+
+addTask.addEventListener('click', () => {
+    
+})

@@ -23,16 +23,16 @@
     </div>
     <div class="full-page">
         <div class="sidebar">
-            <div class="main">
+            <div class="main" id="main">
                 <div class="side-drop">
                     <button type="button" onclick="dropdown()" class="side-drop-btn">Tasks</button>
-                    <div class="side-drop-menu">
+                    <div class="side-drop-menu" id="Tasks">
                         <button>Unfinished</button>
                         <button>Completed</button>
                     </div>
                 </div>
             </div>
-            <div class="daily">
+            <div class="daily" id="daily">
                 <div class="side-drop">
                     <button type="button" onclick="dropdown()" class="side-drop-btn">Sunday</button>
                     <div class="side-drop-menu">
@@ -78,7 +78,26 @@
             </div>
         </div>
         <div class="task-window">
-            <p></p>
+            <div id="task-body">
+                <h1 id="day">TEST: REMOVE LATER</h1>
+                <div id="add-group">
+                    <label for="add-task" id="add-label">Add New Task</label>
+                    <button type="button" id="add-task">+</button>
+                    <div class="form-popup" id="myForm">
+                        <form class="form-container">
+                            <h1>Add Task</h1>      
+                            
+                            <label for="task-name">Name</label>
+                            <input id="task-name">
+                            <label for="task-desc">Description</label>
+                            <input id="task-desc">
+                            <label for="due-date">Due Date</label>
+                            <input id="due-date">
+
+                        </form>
+                      </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
